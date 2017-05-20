@@ -1,3 +1,6 @@
+process.env['USERNAME'] = "unitest"
+process.env['PASSWORD'] = "testuni"
+
 var express = require('express')
 var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
