@@ -1,6 +1,6 @@
 var express = require('express')
 var assert = require('assert')
-var bcrypt = require('bcrypt')
+    //var bcrypt = require('bcrypt')
 var adminModel = require("../models/model").adminModel
 var path = require('path')
 var router = express.Router()
