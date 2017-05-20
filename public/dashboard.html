@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Add Questions</title>
+    <title>Add Questions</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-			<div>
-				Question:
-				<br />
-				<textarea  style="width: 300px;height: 50px;" id="question" name="question" value="">
-				</textarea> 
-			</div>
-			<div>
-				category:
-				<input type="text" id = "cate" name="category" value="" />
-			</div>
-			<div>
-				time:
-				<input type="number" id = "time" name="time" value="" />
-			</div>
-			<div>
-				credite:
-				<input type="text" id = "credit" name="credit" value="" />
-			</div>
-		    <div>
-		        <input type="radio" name="question-1-answers" id="radio-1" value=false />
-		        <input type="text" id="ans1">
-		    </div>
-		    
-		    <div>
-		        <input type="radio" name="question-1-answers" id="radio-2" value=false />
-		        <input type="text" id="ans2">
-		    </div>
-		    
-		    <div>
-		        <input type="radio" name="question-1-answers" id="radio-3" value=false />
-		        <input type="text" id="ans3"
-		    </div>
-		    
-		    <div>
-		        <input type="radio" name="question-1-answers" id="radio-4" value=false />
-		        <input type="text" id="ans4"
-		    </div>
-		    <br />
-		    <button id="submit">Submit</button>
-		    <button id="logout">Logout</button>
+    <table>
+        <tr>
+            <td>category</td>
+            <td><select id="cate">
+				<option value="math">Math</option>
+				<option value="lao">Lao</option>
+				<option value="geography">Geography</option>
+				<option value="history">History</option>
+				<option value="english">English</option>
+				<option value="physics">Physics</option>
+				<option value="chemistry">Chemistry</option>
+				</select>
+            </td>
+            <!--<td> <input type="text"  name="category" value="" /></td>-->
+        </tr>
+        <tr>
+            <td>time</td>
+            <td>
+                <select id="time">
+				<option value=20>20</option>
+				<option value=25>25</option>
+				<option value=30>30</option>
+				<option value=40>40</option>
+				<option value=50>50</option>
+				</select>
+            </td>
+            <!--<td><input type="number"  name="time" value="" /></td>-->
+
+        </tr>
+        <tr>
+            <td>credit</td>
+            <td> <input type="text" id="credit" name="credit" /></td>
+        </tr>
+
+    </table>
 
 
-	<script
-		  src="https://code.jquery.com/jquery-3.2.1.min.js"
-		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		  crossorigin="anonymous">
-	</script>
-	<script type="text/javascript" src="./index.js"></script>
+    <div>
+        <p>Question</p>
+        <br />
+        <textarea style="width: 300px;height: 100px;" id="question" name="question"></textarea>
+    </div>
+
+    <div>
+        <p>Answer</p>
+        <input type="text" id="ans1">
+        <input type="radio" name="question-1-answers" id="radio-1" value=false />
+    </div>
+
+    <div>
+
+        <input type="text" id="ans2">
+        <input type="radio" name="question-1-answers" id="radio-2" value=false />
+    </div>
+
+    <div>
+
+        <input type="text" id="ans3" </div>
+        <input type="radio" name="question-1-answers" id="radio-3" value=false />
+
+    </div>
+
+    <input type="text" id="ans4" </div>
+    <input type="radio" name="question-1-answers" id="radio-4" value=false />
+    <br />
+    <button id="submit">Submit</button>
+    <button id="logout">Logout</button>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
+
 </html>
