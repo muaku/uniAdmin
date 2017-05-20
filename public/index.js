@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var apiHost = "http://52.197.181.118:3000"
     $("#submit").click(function() {
         var question = $("textarea#question").val().trim()
         var category = $("#cate").val().trim()
@@ -31,7 +32,7 @@ $(document).ready(function() {
         }
 
         //Post request
-        $.post("http://localhost:3000/question/create", data, function(res, status) {
+        $.post(`${apiHost}/question/create`, data, function(res, status) {
             alert(res)
         })
 
@@ -41,8 +42,8 @@ $(document).ready(function() {
     //when click on the logout botton
 
     $("#logout").click(function() {
-        $.get("http://localhost:3000/logout", function(res, status) {
-            window.location.replace("http://localhost:3000/login")
+        $.get(`${apiHost}/logout`, function(res, status) {
+            window.location.replace(`${apiHost}/login`)
         })
     })
 })
