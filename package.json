@@ -17,6 +17,7 @@
     "helmet": "^3.6.0",
     "method-override": "^2.3.8",
     "mongoose": "^4.10.0",
+    "mongoose-random": "^0.1.1",
     "passport": "^0.3.2",
     "randomstring": "^1.1.5"
   }
